@@ -47,6 +47,7 @@ namespace TwitterClone.UI.Controllers
         public ViewResult Update()
         {
             Person person = obj.SearchUser(Session["UserId"].ToString());
+
             PersonVM peopleVM = new PersonVM();
             peopleVM.UserId = person.UserId;
             peopleVM.Email = person.Email;
