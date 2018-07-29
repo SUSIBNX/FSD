@@ -49,7 +49,7 @@ namespace TwitterClone.UI.Controllers
                 if (objPerson != null)
                     searchResult.showDialog = true;
                 return PartialView("_PartialSearchDialog", objPerson);
-                //return RedirectToAction("Index", "Home", searchResult);
+                //return RedirectToAction("Index", "Home", searchResult);//
             }
         }
 
